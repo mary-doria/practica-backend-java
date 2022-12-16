@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>Practica Backend Java CRUD clientes</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    </head>
+    <body>
+        
+        <h1>Clientes CRUD</h1>
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="create-tab" data-toggle="tab" href="#create" role="tab" aria-controls="create" aria-selected="true">Create</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="read-tab" data-toggle="tab" href="#read" role="tab" aria-controls="read" aria-selected="false">Read</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="create" role="tabpanel" aria-labelledby="create-tab">
+                <form>
+                    <div class="form-group">
+                        <label for="inputNames">Nombres</label>
+                        <input class="form-control" id="inputNames" aria-describedby="nameHelp" placeholder="Ingrese nombres">
+                      <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                    </div>
+                    <div class="form-group">
+                        <label for="inputApellidos">Apellidos</label>
+                        <input class="form-control" id="inputApellidos" aria-describedby="lastNameHelp" placeholder="Ingrese apellidos">
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label for="Tipo de documento">Tipo de documnento</label>
+                                <select class="form-control" id="inputTipoDocumento">
+                                    <option>TI</option>
+                                    <option>CC</option>
+                                    <option>CE</option>
+                                </select>                            
+                            </div>
+                            <div class="col">
+                                <label for="Numero de documento">Numero de documento</label>
+                                <input class="form-control" id="inputNumeroDocumento" aria-describedby="numeroIdentidadHelp" placeholder="Ingrese numero de documento">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEdad">Edad</label>
+                        <input class="form-control" id="inputEdad" aria-describedby="edadHelp" placeholder="Ingrese edad">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputCiudad">Ciudad de nacimiento</label>
+                        <input class="form-control" id="inputCiudad" aria-describedby="ciudadHelp" placeholder="Ingrese ciudad de nacimiento">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputFoto">Cargar foto</label>
+                        <input type="file" class="form-control-file" id="inputFoto">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+            <div class="tab-pane fade" id="read" role="tabpanel" aria-labelledby="read-tab">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Nombres</th>
+                        <th scope="col">Apellidos</th>
+                        <th scope="col">Tipo ID</th>
+                        <th scope="col">Numero ID</th>
+                        <th scope="col">Edad</th>
+                        <th scope="col">Ciudad</th>
+                        <th scope="col">Opciones</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"></th>
+                        <td>Zoito</td>
+                        <td>Matt</td>
+                        <td>TI</td>
+                        <td>12345</td>
+                        <td>8</td>
+                        <td>Medellín</td>
+                        <td>Update, Delete</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+          </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
